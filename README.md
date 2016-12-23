@@ -16,7 +16,9 @@
 #### perf-docker.sh
 記得改成需要監測的網卡名稱（可以用 ip addr找一下）
 
+
     _network=$(sh netspeed.sh 需監測的網卡名稱| awk '{printf $4}')
+
 
 ## 3.執行程式
 ```
