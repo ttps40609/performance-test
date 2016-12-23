@@ -10,16 +10,14 @@
 ## 2.小設定(完全照預設別說跑不動）
 #### start-docker.sh
 我預設從3000Port開始跑因而我寫2999
-
-    p = iperf3 起始Server Port -1的數字
-
+```
+p = iperf3 起始Server Port -1的數字
+```
 #### perf-docker.sh
 記得改成需要監測的網卡名稱（可以用 ip addr找一下）
-
-
-    _network=$(sh netspeed.sh 需監測的網卡名稱| awk '{printf $4}')
-
-
+```
+_network=$(sh netspeed.sh 需監測的網卡名稱| awk '{printf $4}')
+```
 ## 3.執行程式
 ```
 source start-docker.sh
